@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+
+    .login-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .login-header {
+      text-align: center;
+      padding: 30px 20px 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .login-body {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .social-login, .manual-login {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .social-login button {
+      padding: 10px;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .github-btn {
+      background-color: #4C6EF5;
+    }
+
+    .google-btn {
+      background-color: #D9534F;
+    }
+
+    .manual-login input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .manual-login button {
+      padding: 10px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 10%;
+      font-weight: bold;
+    }
+
+    .login-footer {
+      background-color: #4e4e4e;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 20px;
+      font-size: 14px;
+    }
+
+    .login-footer a {
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="login-header">
+      Login with Social Media or Manually
+    </div>
+
+    <div class="login-body">
+      <div class="social-login">
+        <button class="github-btn">Login with Github</button>
+        <button class="google-btn">Login with Google</button>
+      </div>
+
+      <div class="divider">or</div>
+
+      <div class="manual-login">
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button>Login</button>
+      </div>
+    </div>
+
+    <div class="login-footer">
+        <a href="signup.html">Sign up</a>
+        <a href="#">Forgot password?</a>
+    </div>
+  </div>
+
+</body>
+</html>
